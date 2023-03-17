@@ -1,0 +1,55 @@
+$blue: #1976d2;
+$red: #ff0000;
+
+.blue {
+  .toggle {
+    color: $blue;
+  }
+  .header {
+    background-color: $blue;
+  }
+  .radio {
+    color: $blue;
+  }
+  .MuiRadio-root.Mui-checked {
+    color: $blue;
+  }
+  .MuiSwitch-switchBase.Mui-checked {
+    color: $blue;
+  }
+  .MuiSwitch-switchBase.Mui-checked.MuiSwitch-track {
+    background-color: $blue;
+  }
+  .btnSubmit{
+    background-color:$blue
+  }
+  .btnSubmit:hover{
+    background-color:$blue
+  }
+}
+.red {
+  .toggle {
+    color: $red;
+  }
+  .header {
+    background-color: $red;
+  }
+  .radio {
+    color: $red;
+  }
+  .MuiRadio-root.Mui-checked {
+    color: $red;
+  }
+  .MuiSwitch-switchBase.Mui-checked {
+    color: $red;
+  }
+  .MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+    background-color: $red;
+  }
+  .btnSubmit{
+    background-color:$red
+  }
+  .btnSubmit:hover{
+    background-color:$red
+  }
+}

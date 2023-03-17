@@ -1,0 +1,12 @@
+$blue: #1976d2;
+$red: #ff0000;
+.blue{
+    .header{
+        background-color: $blue;
+    }
+}
+.red{
+    .header{
+        background-color: $red;
+    }
+}
