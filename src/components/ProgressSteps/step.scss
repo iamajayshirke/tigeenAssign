@@ -20,11 +20,17 @@ $red: #ff0000;
   .MuiSwitch-switchBase.Mui-checked.MuiSwitch-track {
     background-color: $blue;
   }
-  .btnSubmit{
-    background-color:$blue
+  .btnSubmit {
+    background-color: $blue;
   }
-  .btnSubmit:hover{
-    background-color:$blue
+  .btnSubmit:hover {
+    background-color: $blue;
+  }
+  .MuiTab-root {
+    background-color: $blue;
+  }
+  .MuiTabs-flexContainer {
+    background-color: $blue;
   }
 }
 .red {
@@ -43,13 +49,19 @@ $red: #ff0000;
   .MuiSwitch-switchBase.Mui-checked {
     color: $red;
   }
-  .MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+  .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
     background-color: $red;
   }
-  .btnSubmit{
-    background-color:$red
+  .btnSubmit {
+    background-color: $red;
   }
-  .btnSubmit:hover{
-    background-color:$red
+  .btnSubmit:hover {
+    background-color: $red;
+  }
+  .MuiTab-root {
+    background-color: $red;
+  }
+  .MuiTabs-flexContainer {
+    background-color: $red;
   }
 }

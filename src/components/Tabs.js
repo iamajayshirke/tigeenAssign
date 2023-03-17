@@ -4,8 +4,10 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { useSelector } from "react-redux";
 
 function TabPanel(props) {
+ 
   const { children, value, index, ...other } = props;
 
   return (
@@ -40,13 +42,14 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
-
+  const data =  useSelector(e=>e.users);
+  const { preset} = data;
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%" }} className={`${preset === "blue" ? "blue" : "red"}`}>
       <Box sx={{  borderColor: "divider" ,bgcolor: 'primary.main'}}>
         <Tabs
           value={value}
@@ -59,22 +62,12 @@ export default function BasicTabs() {
             backgroundColor:"white",
             height:"3px"
           }}}
-        //   indicatorColor='secondary'
         >
           <Tab label="Tab One" {...a11yProps(0)} sx={{color:"white",fontSize:"small"}}/>
           <Tab label="Tab Two" {...a11yProps(1)} sx={{color:"white",fontSize:"small"}}/>
           <Tab label="Tab Three" {...a11yProps(2)} sx={{color:"white",fontSize:"small"}}/>
         </Tabs>
       </Box>
-      {/* <TabPanel value={value} index={0} >
-        Tab One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Tab Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Tab Three
-      </TabPanel> */}
     </Box>
   );
 }
